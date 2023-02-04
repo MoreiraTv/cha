@@ -7,7 +7,3 @@ textArea.addEventListener("keyup", e => {
 
 const chat = document.querySelector(".chat")
 chat.lastElementChild.scrollIntoView()
-
-const chatMessages = {
-  
-}
