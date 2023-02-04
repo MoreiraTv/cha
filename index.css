@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+#root {
+  background-color: #1A1924;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  font-size: 1.6rem;
+}
+
+#root .container {
+  padding-left: 1rem;
+  margin: 0 auto;
+  scale: 0.9;
+}
+
+.container {
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+  width: 80vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.talk {
+  display: flex;
+  width: 100%;
+  height: 4.8rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.talk img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.6rem;
+  width: 100%;
+}
+
+.contact strong {
+  font-size: 1.6rem;
+  color: #E1E1E6;
+}
+
+.contact .status {
+  color: #00B37E;
+  font-size: 1.2rem;
+}
+
+.chat {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.chat::-webkit-scrollbar{
+  display: none;
+}
+
+.row {
+  width: 100%;
+  min-height: 6.6rem;
+  height: fit-content;
+  margin-bottom: 3.0rem;
+  color: #E1E1E6;
+}
+
+.row .last-conversation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #E1E1E6;
+}
+
+.row .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50vw;
+}
+
+.row .right {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 50vw;
+}
+
+.row span {
+  margin-top: 1.0rem;
+  width: fit-content;
+  background-color: #633BBC;
+  border-radius: 0 .8rem .8rem .8rem;
+  padding: 1.4rem;
+}
+
+.row:not(div.right) span{
+  border-radius: .8rem .8rem 0 .8rem;
+}
+
+form {
+  width: 100%;
+  margin-top: 2.4rem;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 2.4rem;
+  background-color: #282843;
+  padding: 1.0rem 3.2rem;
+  border-radius: 5.0rem;
+}
+
+.input textarea {
+  text-align: left;
+  min-width: 100%;
+  height: 1.6rem;
+  max-height: 12.8rem;
+  appearance: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  color: #E1E1E6;
+  resize: none;
+  overflow: hidden;
+}
+
+.input textarea:focus {
+  margin: 0;
+  outline: none;
+}
+
+.input button{
+  margin-left: 1.0rem;
+  appearance: auto;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 60.0rem) {
+  .input textarea {
+    max-height: 6.4rem;
+  }
+}
